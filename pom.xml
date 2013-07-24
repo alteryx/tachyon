@@ -472,6 +472,29 @@
                         <filemode>744</filemode>
                       </mapper>
                     </data>
+                    <data>
+                      <src>${basedir}/conf</src>
+                      <type>directory</type>
+                      <mapper>
+                        <type>perm</type>
+                        <user>${deb.user}</user>
+                        <group>${deb.user}</group>
+                        <prefix>${deb.install.path}/conf</prefix>
+                        <filemode>744</filemode>
+                      </mapper>
+                      <excludes>slaves,tachyon-env.sh.template</excludes>
+                    </data>
+                    <data>
+                      <src>${basedir}/src/main/java/tachyon/web/resources</src>
+                      <type>directory</type>
+                      <mapper>
+                        <type>perm</type>
+                        <user>${deb.user}</user>
+                        <group>${deb.user}</group>
+                        <prefix>${deb.install.path}/src/main/java/tachyon/web/resources</prefix>
+                        <filemode>744</filemode>
+                      </mapper>
+                    </data>
                   </dataSet>
                 </configuration>
               </execution>
