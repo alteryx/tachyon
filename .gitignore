@@ -12,3 +12,5 @@ tachyon.iml
 target/
 *~
 *.swp
+*.log
+
