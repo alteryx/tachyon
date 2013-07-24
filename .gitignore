@@ -11,3 +11,4 @@ src/main/java/tachyon/Version.java
 tachyon.iml
 target/
 *~
+*.swp
